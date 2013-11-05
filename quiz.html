@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+		ul {list-style-type: none;}
+	</style>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src = "quiz.js"></script>
+	
+</head>
+<body>
+<h1>HTML Quiz</h1>
+<table>
+<tr>
+<td>
+<form name = "quizForm">
+<ol>
+<li>Question 1</li>
+<ul>
+<li><input type="radio" name="A1" value="correct">Answer1A</input></li>
+<li><input type="radio" name="A1" value="wrong" >Answer1B</input></li>
+<li><input type="radio" name="A1" value="wrong">Answer1C</input></li>
+<li><input type="radio" name="A1" value="wrong">Answer1D</input></li>
+
+</ul>
+<li>Question 2</li>
+<ul>
+<li><input type="radio" name="A2" value="wrong">Answer2A</input></li>
+<li><input type="radio" name="A2" value="wrong" >Answer2B</input></li>
+<li><input type="radio" name="A2" value="correct">Answer2C</input></li>
+<li><input type="radio" name="A2" value="wrong">Answer2D</input></li>
+
+</ul>
+<li>Question 3</li>
+<ul>
+<li><input type="radio" name="A3" value="wrong">Answer3A</input></li>
+<li><input type="radio" name="A3" value="wrong" >Answer3B</input></li>
+<li><input type="radio" name="A3" value="correct">Answer3C</input></li>
+<li><input type="radio" name="A3" value="wrong">Answer3D</input></li>
+
+</ul>
+<li>Question 4</li>
+<ul>
+<li><input type="radio" name="A4" value="wrong">Answer4A</input></li>
+<li><input type="radio" name="A4" value="correct" >Answer4B</input></li>
+<li><input type="radio" name="A4" value="wrong">Answer4C</input></li>
+<li><input type="radio" name="A4" value="wrong">Answer4D</input></li>
+
+</ul>
+<li>Question 5</li>
+<ul>
+<li><input type="radio" name="A5" value="wrong">Answer5A</input></li>
+<li><input type="radio" name="A5" value="wrong" >Answer5B</input></li>
+<li><input type="radio" name="A5" value="wrong">Answer5C</input></li>
+<li><input type="radio" name="A5" value="correct">Answer5D</input></li>
+
+</ul>
+</ol>
+<input type="button" value="submit answers" onClick="checkFilled()"></input>
+<input type="reset" value="clear all"></input>
+
+</form>
+</td>
+<td>
+	<div id="container" style="width: 40%; height: 50%"></div>	
+</td>
+</tr>
+</body>
+</html>
